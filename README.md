@@ -304,3 +304,44 @@ html 링크 수업 https://opentutorials.org/course/11/64
 이 여백을 무시하려면 table 태그에 border-collapse 효과의 값으로 collapse를 주면 된다. 
 
 HTML 표 수업 (https://opentutorials.org/course/11/70)
+
+### 배경 꾸미기
+
+**엘리먼트의 배경**
+
+엘리먼트의 배경에 색상을 부여하거나 이미지를 표시하고 싶을 때 background 효과를 사용한다. 
+
+이 효과를 이용하면 배경에 사용된 이미지의 위치를 지정하거나, 반복 할 수 있다. 
+
+**배경색**
+
+background-color:색상값
+
+* Hex	        16진수로 색상 값을 표현, #ff0000 (붉은색), #00ff00(초록), #0000ff(파랑)
+* RGB	        붉은색, 초록, 파랑의 값을 조합해서 색상 값을 표현,  RGB(255,0,0), RGB(0,255,0), RGB(0,0,255)
+* 별명	       red, blue, green등
+
+**배경 이미지**
+
+background-image: url('이미지의 URL');
+
+**배경 이미지의 반복**
+
+background-repeat: 반복방식
+
+* repeat	     수직, 수평 모두 반복함
+* repeat-x	     수평만 반복함
+* repeat-y	     수직만 반복함
+* no-repeat	     반복하지 않음
+
+배경 이미지의 위치
+
+* left top, left center, left bottom, right top, right center, right bottom, center top, center center, center bottom	배경 위치를 지정
+* x% y%	            x%는 수평위치를 y%는 수직 위치를 의미하고, 이미지의 상대적인 위치를 지정한다.
+* xpos ypos	        이미지의 절대적인 위치를 지정한다.
+
+**단축속성**
+
+<pre>
+body {background:#00ffff url('image.png') no-repeat right top;}
+</pre>
