@@ -294,3 +294,13 @@ W3C에서는 em의 사용을 권장하고 있다. em은 상대적인 크기인�
 마우스를 누른 상태의 링크|	a:active{}|	a:hover 뒤에 와야 함
 
 html 링크 수업 https://opentutorials.org/course/11/64
+
+### 표 꾸미기
+
+**표의 특징**
+
+표에 대한 HTML의 기본 디자인은 표 전체의 테두리와 셀(cell) 사이에 여백이 기본적으로 지정되어 있다. 
+
+이 여백을 무시하려면 table 태그에 border-collapse 효과의 값으로 collapse를 주면 된다. 
+
+HTML 표 수업 (https://opentutorials.org/course/11/70)
