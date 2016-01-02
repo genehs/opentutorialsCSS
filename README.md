@@ -233,3 +233,49 @@ CSS는 웹페이지를 꾸며주는 언어다. 이를 위해서 다양한 효과
 * letter-spacing = 문자와 문자사이의 간격을 지정한다.   http://www.w3schools.com/cssref/playit.asp?filename=playcss_letter-spacing
 * vertical-align = 텍스트의 수직 정렬을 지정한다.      http://www.w3schools.com/cssref/playit.asp?filename=playcss_vertical-align&preval=baseline
 * white-space = 줄바꿈되는 방식을 지정한다.            http://www.w3schools.com/cssref/playit.asp?filename=playcss_white-space
+
+### 폰트 꾸미기
+
+**Font**
+
+폰트는 글꼴을 의미하는데, 글자의 서체를 의미한다. 
+
+**Font Family**
+
+일반적인 방법으로는 웹페이지에는 글꼴을 포함할 수 없다. 
+
+그렇기 때문에 웹페이지에 지정된 글꼴을 사용자가 보기 위해서는 사용자의 디바이스에도 해당 글꼴이 포함되어 있어야 한다. 그래서 CSS에서는 font family라는 개념이 있는데, 글꼴의 우선순위를 정해서 여러개 지정하면 그 중에서 사용할 수 있는 폰트를 반영하게 된다. 
+
+예를들어 아래의 구문은 사용자 컴퓨터에 Times New Roman 글꼴이 있다면 적용하고 없다면 Times를 적용한다. 
+
+p{font-family:"Times New Roman", Times, serif;}
+
+**고정폭, 가변폭?**
+
+일반적으로 글꼴을 디자인 할 때 문자의 폭을 문자의 모양에 따라서 다른 넓이를 갖게 된다.
+
+이를테면 숫자 1과 문자 m의 폭을 같게 디자인하면 어색하게 느껴질 수 있기 때문이다. 이러한 방식을 가변폭이라고 한다. 
+
+반대로 데이터 분석이나 코딩과 같은 일을 하는데는 미려함 보다는 정확함을 더 중시하기 때문에 글자의 폭을 같게 디자인하는데 이러한 방식을 고정폭이라고 한다.
+
+일반적으로 고정폭 글꼴은 굴림체처럼 폰트의 이름 뒤에 '체'를 붙인다. 
+
+**Sans-serif VS serif**
+
+serif(세리프)란 문자의 디자인에 포함된 장식적인 요소로 아래 그림의 붉은색에 해당된다. 대표적인 글꼴로 바탕체, 궁서체, Time New Roman이 있다. 
+
+sans-serif(산세리프)란 세리프의 장식적인 요소가 없는 디자인으로 굴림체, 돋음체, Arial, Verdana가 대표적이다.
+
+font-family에 serif나 sans-serif를 지정하면 운영체제 내부적인 기준에 따라서 적당한 글꼴이 표시된다.
+
+**Font Size**
+
+글꼴의 크기를 지정할 때는 font-size 효과를 사용한다. font-size 효과에서 자주 사용되는 단위는 px와 em이 있고,
+
+W3C에서는 em의 사용을 권장하고 있다. em은 상대적인 크기인데, 폰트의 대문자 M의 폭을 16px로 계산하기 때문에 1em은 기본적으로 16px과 같다고 생각하면 된다.
+
+하지만 em은 현재 엘리먼트가 상속하고 있는 폰트 크기를 기준으로 상대적으로 결정된다. (참고:em과 px를 변환해주는 서비스 http://pxtoem.com/ ) 
+
+**Font Weight**
+
+글꼴의 두께를 지정할 때는 font-weight를 사용한다. 
