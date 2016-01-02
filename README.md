@@ -193,3 +193,43 @@ type 선택자
 
 * 특정 엘리먼트의 직접적인 하위 엘리먼트에 대해서만 선택할 때 사용(하위 선택자와 다름)
 * ie6는 지원되지 않음
+
+## 스타일링
+
+CSS는 웹페이지를 꾸며주는 언어다. 이를 위해서 다양한 효과들이 사용된다. 그 중에는 모든 엘리먼트에 공통적으로 적용되는 효과도 있고, 특정한 엘리먼트와 컨텐츠를 꾸며주는 효과도 있다. 스타일링의 하위토픽에서는 엘리먼트와 컨텐츠 별로 꾸미는 방법에 대해서 알아본다.
+
+### 텍스트 꾸미기
+
+**span 태그**
+
+텍스트는 태그가 아니라 컨텐트이기 때문에 텍스트를 꾸며주기 위해서는 텍스트를 감싸는 태그가 필요하다. 줄바꿈 없이 일부 텍스트를 꾸며주기 위해서는 꾸미려는 텍스트를 <span> 태그로 감싸고 여기에 효과를 준다. 
+
+**색**
+
+텍스트에 컬러를 부여할 때는 color 효과를 사용한다. CSS에서는 색상을 지정하는 3가지 방법이 있는데 아래와 같다. 
+
+* Hex       16진수로 색상 값을 표현, #ff0000 (붉은색), #00ff00(초록), #0000ff(파랑)
+* RGB       붉은색, 초록, 파랑의 값을 조합해서 색상 값을 표현,  RGB(255,0,0), RGB(0,255,0), RGB(0,0,255)
+* 별명       red, blue, green등 칼러코드 (http://www.somacon.com/p142.php)
+
+**정렬**
+
+텍스트를 정렬하기 위해서는 정렬하고자 하는 텍스트를 태그로 감싸고 이 태그에 text-align 효과를 지정한다. CSS에서는 4가지 형태의 정렬방식을 지원한다.
+
+* left	    왼쪽 정렬
+* right	    오른쪽 정렬
+* center	가운데 정렬
+* justify	양쪽 정렬, 텍스트 간의 간격을 조정해서 행의 간격을 일치시킴
+
+**텍스트 장식**
+
+**text-decoration**
+* overline	     윗줄	예제
+* line-through	 취소선	예제
+* underline	     밑줄	예제
+
+**기타 태그**
+* line-height = 행간격을 지정한다                     http://www.w3schools.com/cssref/playit.asp?filename=playcss_line-height
+* letter-spacing = 문자와 문자사이의 간격을 지정한다.   http://www.w3schools.com/cssref/playit.asp?filename=playcss_letter-spacing
+* vertical-align = 텍스트의 수직 정렬을 지정한다.      http://www.w3schools.com/cssref/playit.asp?filename=playcss_vertical-align&preval=baseline
+* white-space = 줄바꿈되는 방식을 지정한다.            http://www.w3schools.com/cssref/playit.asp?filename=playcss_white-space
