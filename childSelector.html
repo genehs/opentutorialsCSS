@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <!--
+        id navigation의 직접적인 자식인 li만 테두리가 생기고, 
+        <li>사이트</li>의 하위 엘리먼트에는 테두리가 생기지 않는다.
+        -->
+        <style type="text/css">
+            #navigation > li{
+                border:1px solid red;
+            }
+        </style>
+        <ul id="navigation">
+            <li>홈</li>
+            <li>사이트
+                <ul>
+                <li>생활코딩</li>
+                <li>코딩생활</li>
+                </ul>
+            </li>
+            <li></li>
+        </ul>        
+    </body>
+</html>
