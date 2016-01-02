@@ -345,3 +345,42 @@ background-repeat: 반복방식
 <pre>
 body {background:#00ffff url('image.png') no-repeat right top;}
 </pre>
+
+## 박스모델
+
+HTML의 엘리먼트들은 (사각형 모양을 의미하는)박스의 형태를 가지고 있는데 이것을 가르켜 박스모델이라고 하고, 박스의 크기와 박스간의 간격을 정의하는 다양한 속성이 있다.
+
+* margin : border를 기준으로 박스의 여백을 지정, 시각적인 요소는 없음
+* border : 박스의 테두리
+* padding : 테두리와 content간의 간격
+* content : 엘리먼트 안에 포함되는 컨텐츠
+
+**content(컨텐츠)**
+
+* 엘리먼트안에 포함되는 컨텐츠로 예를들어 <div>test</div>라고 태그를 기술했을 때 div앨리먼트의 content는 test임
+* content는 폭(width)과 높이(height)를 지정할 수 있다.
+
+**border(보더), 테두리**
+
+* 엘리먼트의 테두리
+* 테두리는 margin과 padding의 경계가 된다.
+* 테두리의 굵기와 색상과 스타일을 지정할 수 있다.
+
+**padding(패딩)**
+
+* 테두리와 컨텐츠 간의 여백
+
+**margin(마진)**
+
+* 엘리먼트와 엘리먼트 간의 여백
+* 위 아래에 인접한 엘리먼트 간에는 margin의 값이 더 큰 쪽의 margin이 적용됨(좌우는 아님)
+
+
+**margin, padding 표기법**
+
+* margin:10px - 상우하좌의 margin값이 10px
+* margin:10px 20px - 상하 10px, 좌우 20px,
+* margin:10px 20px 30px - 상 10px, 좌우 20px, 하 30px
+* margin:10px 20px 30px 40px - 상우하좌의 순으로 값이 지정됨
+
+파이어버그사용법 https://opentutorials.org/course/128/883
