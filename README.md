@@ -141,3 +141,37 @@ html과 css서로 다른 문법 체계를 가지고 있음. 그러므로 브라�
 그 규칙을 배울 예정.
 
 언제 무슨 방식을 쓰는가?? 제대로 된 코딩을하고 규모가 있는 것을 사용할때 style tag를 사용.
+
+## 선택자
+
+CSS의 효과가 적용될 태그를 지정
+<pre>
+Selector Declaration 
+h1 {color:blue; font-size:12px; }
+
+h1 = selector
+괄호안 = Declaration
+
+color = property
+blue = value;
+font-size = property
+12px = value;
+</pre>
+
+Id 선택자
+
+* id 속성은 전체 문서에서 하나의 태그를 식별하기 위해서만 사용됨
+* 우선순위가 가장 높음
+* css 선택자에서는 #을 사용해서 id임을 표시
+* 다음 예제는 id값이 memo인 태그의 컨텐츠를 빨간색으로 표시하도록 함
+
+Class 선택자
+
+* class 속성은 일련의 태그를 그룹핑해서 하나처럼 제어하기 위해서 사용
+* class 속성에는 공백으로 구분된 여러개의 class가 표시될 수 있음
+* css선택자에서는 '.'을 사용해서 class임을 표시
+
+type 선택자
+
+* 특정 태그명을 가진 엘리먼트 전체를 제어하기 위해서 사용
+* css선택자에서는 태그의 이름을 사용함
