@@ -532,3 +532,28 @@ cascading3.html - 소스 상에서 css 선언이 나중에 나올수록 우선�
 Atom 에디터 수업 : https://opentutorials.org/module/1579
 
 크롬 개발자 도구 수업 : https://opentutorials.org/module/306/2865
+
+# SASS
+
+소개
+
+**SASS의 등장배경**
+
+CSS는 HTML을 디자인하는 언어다. 엘리먼트(태그)를 선택하고, 선택된 태그를 꾸며주는 단순한 원리를 가지고 있다. 
+
+이런 단순성은 CSS의 미덕이지만, 규모가 조금만 커져도 CSS 유지보수하는 것은 어렵거나 불가능한 일이 된다. 
+
+자바스크립트와 같은 동적인 언어는 변수나 함수를 이용해서 코드의 재활용성을 높이고 코드의 양을 줄여주는데 반해서 CSS는 효율이 떨어진다.
+
+**SASS란?**
+
+위에서 언급한 CSS의 단점을 보완하기 위한 기술로, SASS 자체를 그대로 사용할수는 없고, SASS의 문법에 맞게 SASS파일을 만들면 컨버터를 이용해서 CSS를 생성한다.
+
+**SASS 홈페이지**
+
+http://sass-lang.com/
+
+**Sass 학습을 위한 도서**
+
+http://books.webactually.com/sass-for-web-designers/
+
