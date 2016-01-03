@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,gBAAgB;AAEhB,CAAE;EACA,KAAK,EAAE,OAAO;EACd,OAAQ;IAAE,KAAK,EAAE,OAAO;EACxB,SAAU;IAAE,KAAK,EAAE,OAAO",
+"sources": ["parentreferences.scss"],
+"names": [],
+"file": "parentreferences.css"
+}

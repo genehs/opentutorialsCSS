@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,gBAAgB;ACAhB,mBAAmB;ADInB,UAAW;ECDT,iBAAsB,EADO,IAAI;EAEjC,sBAA2B,EAFE,IAAI;EAGjC,yBAA8B,EAHD,IAAI;;ADGnC,OAAQ;ECFN,iBAAsB,EDEQ,GAAG;ECDjC,sBAA2B,EDCG,GAAG;ECAjC,yBAA8B,EDAA,GAAG;;AACnC,QAAS;ECHP,kBAAsB,EDGU,GAAG;ECFnC,uBAA2B,EDEK,GAAG;ECDnC,0BAA8B,EDCE,GAAG",
+"sources": ["import2.scss","import.scss"],
+"names": [],
+"file": "import2.css"
+}

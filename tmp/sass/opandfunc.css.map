@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,gBAAgB;AAEhB,OAAQ;EAKN,KAAK,EAJU,KAAK;EAKpB,aAAa,EAAE,iBAAuB;EAEtC,UAAG;IACD,KAAK,EAAE,IAAI;IACX,KAAK,EAAE,KAA2B;IAElC,gBAAgB,EACd,OAA2B;IAC7B,gBAAQ;MACN,gBAAgB,EACd,OAA2B",
+"sources": ["opandfunc.scss"],
+"names": [],
+"file": "opandfunc.css"
+}
