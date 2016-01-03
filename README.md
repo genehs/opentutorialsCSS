@@ -659,3 +659,8 @@ http://twitter.github.com/bootstrap/
 반응형 웹.
 
 기본 이상의 디자인 구현 가능.
+
+## 기본 사용법
+
+Aptana 사용법 : https://opentutorials.org/course/128/2548
+
