@@ -469,3 +469,15 @@ positioning4.html - position의 값이 static인 경우 class가 me인 엘리먼
 offset 사용(left,right.top,bottom)|불가|가능|가능|가능
 스크롤|따라감|따라감|따라감|고정
 
+## 상속
+
+* 상위 엘리먼트의 속성을 하위 엘리먼트가 물려 받음
+* 속성 중에는 상속이 되는 것과 되지 않는 것이 있음
+* http://www.w3.org/TR/CSS21/propidx.html  inHerited? 가 yes인 경우만 상속됨
+* 속성의 값으로 inhert를 지정하면 상속되지 않는 속성도 강제로 상속할 수 있음
+
+extend.html - 상속의 일반적인 모습과 상속의 우선순위 (jsfiddle, github)
+
+extend2.html - 상속되지 않는 속성(border) (jsfiddle, github)
+
+extend3.html - 강제상속 (jsfiddle, github)
