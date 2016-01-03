@@ -481,3 +481,41 @@ extend.html - 상속의 일반적인 모습과 상속의 우선순위 (jsfiddle,
 extend2.html - 상속되지 않는 속성(border) (jsfiddle, github)
 
 extend3.html - 강제상속 (jsfiddle, github)
+
+## 캐스케이딩
+
+* 엘리먼트는 다양한 CSS 선언의 영향을 받는다. 이 때 충돌을 피하기 위해서 우선순위를 정하는데 이를 캐스케이딩이라고 함.
+* 캐스케이딩에는 다음과 같이 세가지 규칙이 있음.
+    * 중요도  - css가 어디에 선언 되었는지에 따라서 우선순위가 달라짐
+    * 명시도  - 대상을 명확하게 특정할수록 명시도가 높아지면서 우선순위가 높아짐
+    * 소스순서 - css 선언을 나중에 할수록 우선순위가 높아짐
+    
+**중요도**
+
+css는 다양한 위치에서 기술될수 있는데, 그 위치에 따라서 우선순위가 달라진다. css가 기술될 수 있는 위치는 아래와 같고, 우선순위는 아래로 내려갈수록 높다. (저작자 CSS의 !important가 제일 높음)
+
+1. 브라우저의 CSS - 기본적으로 가지고 있는 속성 
+2. 사용자 CSS 일반선언 - 웹 브라우저를 보고 있는 사람.(오페라에서 제한적으로 제공되는 기능)
+3. 저작자 CSS 일반선언 - 지금까지 한 것들..
+4. 저작자 CSS의 !important
+
+cascading.html - 중요도에 따라서 엘리먼트에 적용되는 CSS 효과가 달라진다. (jsfiddle, github)
+
+**명시도**
+
+css선언이 엘리먼트를 상세하게 특정할수록 우선순위가 높아진다. 대상을 지정하는 방법은 아래와 같고 아래로 내려갈수록 우선순위가 높다. (style을 이용하는 것이 제일 높음)
+
+1. type
+2. class
+3. id
+4. inline으로 엘리먼트에 직접 css를 기술
+
+아래는 css 선택자에 따른 우선순위 규칙.(출처) https://stuffandnonsense.co.uk/archives/css_specificity_wars.html
+
+cascading2.html - <div>example</div>의 color 값에 여러개의 css선언이 영향을 주고 있음. 아래로 갈수록 우선순위가 높아짐.  (jsfiddle, github)
+
+**소스순서**
+
+cascading3.html - 소스 상에서 css 선언이 나중에 나올수록 우선순위가 높아짐  (jsfiddle, github)
+
+
