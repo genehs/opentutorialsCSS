@@ -557,3 +557,38 @@ http://sass-lang.com/
 
 http://books.webactually.com/sass-for-web-designers/
 
+## 설치 및 적용
+
+SASS 컴파일러란?
+
+사스의 포멧으로 만들어진 파일을 CSS로 변환해주는 도구
+
+윈도우에서 설치(사스는 루비위에서 동작함)
+1. http://rubyinstaller.org/에 방문해서 ruby를 설치한다.
+2. 윈도우키+R키를 누르고 cmd를 입력한다.
+3. gem install sass 를 입력해서 sass 컴파일러를 설치한다.
+
+사용법
+
+아래는 style.scss 파일이 변경될 때마다 자동으로 style.css파일로 변환해주는 명령
+
+<pre>
+sass --watch style.scss:style.css
+
+sass --watch .:. (이런식으로하면 디렉터리 자체를 감시)
+</pre>
+
+아래는 stylesheets/sass 디렉토리에 있는 모든 sass 파일을 CSS로 변환한 후에 stylesheets/compiled 디렉토리로 이동하는 명령
+
+<pre>
+sass --watch stylesheets/sass:stylesheets/compiled
+</pre>
+
+기존의 CSS를 Sass로 변환
+
+이미 CSS로 프로젝트가 진행된 상황에서 Sass를 도입하는 방법 http://css2sass.heroku.com/
+
+사용방법
+
+Sass 컴파일러는 --watch 옵션을 통해서 사스파일을 감시하다가 그 파일이 수정되면 자동으로 CSS로 변환해주기 때문에 html에서는 컴파일된 CSS를 인클루드해서 페이지가 잘 렌더링되는지 확인하고, 이 CSS파일을 그대로 서버에 반영하면 된다. 
+
