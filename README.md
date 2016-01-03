@@ -519,3 +519,16 @@ cascading2.html - <div>example</div>의 color 값에 여러개의 css선언이 �
 cascading3.html - 소스 상에서 css 선언이 나중에 나올수록 우선순위가 높아짐  (jsfiddle, github)
 
 
+## CSS 활용 - ATOM 에디터의 디자인 변경
+
+웹 이라는 것은 웹 바깥에서도 사용 되는 경우가 많음.. 모바일 에서도 사용이 됨.
+
+데스크탑에서 돌아가는 프로그램을 만들때도 웹 기술을 사용해서 프로그램을 만들 수 있는 기술들이 존재함.
+
+아톰 에디터는 HTML, CSS 등의 기술을 사용해서 만든 에디터..
+
+아톰이 구글 크롬의 기반의 위에서 만듬.
+
+Atom 에디터 수업 : https://opentutorials.org/module/1579
+
+크롬 개발자 도구 수업 : https://opentutorials.org/module/306/2865
