@@ -419,3 +419,53 @@ display 속성의 값을 none으로 하면 엘리먼트를 화면에서 보이�
 * float는 원래 이미지를 둘러싸고 흘러가는 텍스트를 표시하기 위해서 고안된 것이다. example1.html
 * 레이아웃을 구성할 때도 사용된다.example2.html
 * float를 해제하기 위해서는 clear 속성을 사용한다. example3.html
+
+## 포지셔닝
+
+positioning, CSS를 이용해서 HTML 엘리먼트들의 위치를 제어하는 방법
+
+포지셔닝의 종류
+
+엘리먼트에 CSS 속성으로 position을 지정하면 여러가지 방법으로 위치를 지정할 수 있다.
+
+**상대위치(relative positioning)**
+* position:relative
+* 자신의 위치를 기준으로 한 상대위치 값을 지정한다.
+* 자식 엘리먼트의 크기에 따라서 부모 엘리먼트의 크기가 자동으로 변경되지만, 엘리먼트의 위치에 따라서는 변경되지 않는다.
+
+positioning.html - position의 값이 relative인 경우, me의 속성으로 top을 주었을 때 me의 원래 위치에서 10px아래로 내려온다.이 때 parent의 크기가 변하지 않기 때문에 me가 parent위에 표시된다. (jsfiddle, github)
+
+**절대위치(absolute positioning)**
+* position:absolute
+* 문서를 기준으로 위치가 정해지기 때문에 부모 엘리먼트의 위치와는 무관하다.
+* 엘리먼트의 크기가 부모 엘리먼트의 크기에 반영되지 않는다. 
+
+positioning2.html - position의 값을 absolute로 했을 때 me의 offset은 기본적으로 원래 위치의 값을 가지고, parent와의 관계가 완전히 사라지기 때문에 parent는 me의 크기가 전혀 반영되지 않는다.
+
+
+**고정위치(fixed positioning)**
+* position:fixed
+* 문서를 기준으로 위치가 정해지기 때문에 부모 엘리먼트의 위치와는 무관하다.
+* 엘리먼트의 크기가 부모 엘리먼트의 크기에 반영되지 않는다.
+* 스크롤의 영향을 받지 않는다.
+
+positioning3.html - me가 절대위치와 동일한 성격을 갖지만, 화면을 스크롤해도 고정된 위치에 위치함 
+
+**정적위치(static positioning)**
+* position:static
+* 자식 엘리먼트의 크기에 따라서 부모 엘리먼트의 크기가 자동으로 변경된다.
+* position 속성의 값을 지정하지 않으면 기본적으로 static의 값이 주어진다.
+* left, top, right, bottom과 같은 offset이 무시된다.
+
+positioning4.html - position의 값이 static인 경우 class가 me인 엘리먼트가 parent 엘리먼트 안에 포함되어 있고, parent는 me의 크기에 따라서 사이즈가 변함 
+
+**포지셔닝 비교**
+        
+        | 정적위치(static) | 상대위치(relative) | 절대위치(absolute) | 고정위치(fixed)
+--------|-----------------|-------------------|--------------------|---------------
+기준위치|자기위치|자기위치|문서(html), 시작 위치는 static 기준으로 원래의 위치에 맞춰져 있음.|절대위치와 동일
+부모의크기|자식의 크기에 따라 변경|자식의 크기에 따라 변경되지만 위치를 변경함에 따라 부모의 크기가 변경되지는 않음|부모의 크기에 영향을 끼치지 않음|절대위치와 동일
+자신의크기|width:100%로 부모의 크기를 따름|width:100%로 부모의 크기를 따름|포함하고 있는 컨텐트의 크기 만큼 늘어남|절대위치와 동일
+offset 사용(left,right.top,bottom)|불가|가능|가능|가능
+스크롤|따라감|따라감|따라감|고정
+
